@@ -1,0 +1,157 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #23527c;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*Header Section********************************/
+
+nav a {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #333;
+  margin: 0 30px;
+}
+
+/*Jumbotron Section********************************/
+
+.jumbotron {
+  background-image: url(palmtrees.jpeg);
+  background-size: cover;
+  height: 800px;
+}
+
+.jumbo-text h1{
+  font-size: 100px;
+  padding-top: 80px;
+}
+
+.jumbo-text h5 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.jumbo-text, .jumbo-text h5 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*About Me Section********************************/
+#page1 {
+  margin-top: 100px;
+  height: 500px;
+}
+.about-me-photo {
+  border-radius: 50%;
+}
+
+.about-me-background {
+  height: 400px;
+/*  background-image: url(kyrafillmore.jpeg);
+  background-size: cover;*/
+}
+.about-me-text {
+  width: 40%;
+  float: right;
+  margin-right: 100px;
+}
+
+/*Portfolio Section********************************/
+#page2 {
+  height: 600px;
+}
+
+.portfolio h1, .contact-section h1 {
+  margin-bottom: 75px;
+}
+
+.thumbnail {
+  width: 350px;
+  margin: 0 auto;
+}
+
+
+/*Contact Section********************************/
+
+.contact-section {
+  background-image: url(https://download.unsplash.com/reserve/vof4H8A1S02iWcK6mSAd_sarahmachtsachen.com_TheBeach.jpg);
+  background-size: cover;
+  height: 500px;
+}
+
+.contact-section h1 {
+  padding-top: 50px;
+}
+
+form {
+  margin-top: 50px;
+  max-width: 60%;
+  margin: auto;
+}
+
+.form-control {
+  border-radius: none;
+}
+
+.contact-button {
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #fde36e;
+  border-radius: none;
+  color: #fff;
+}
+
+/*Footer/ Social Media Section********************************/
+.social-media ul {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.social-media li a {
+  color: #fde36e
+}
+
+.social-media li a:hover {
+
+}
+
+.footer .copyright {
+  margin-top: 40px;
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #333;
+}
+
+
+/*    Projects Pages    */
+
+#wynkedin-screenshot {
+  max-width: 600px;
+}
+
+
+
+
