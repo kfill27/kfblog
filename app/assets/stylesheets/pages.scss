@@ -30,9 +30,7 @@ nav a {
 /*Jumbotron Section********************************/
 
 .jumbotron {
-  background-image: url(palmtrees.jpeg);
-  background-size: cover;
-  height: 800px;
+  height: 600px;
 }
 
 .jumbo-text h1{
@@ -57,20 +55,6 @@ nav a {
   margin-top: 100px;
   height: 500px;
 }
-.about-me-photo {
-  border-radius: 50%;
-}
-
-.about-me-background {
-  height: 400px;
-/*  background-image: url(kyrafillmore.jpeg);
-  background-size: cover;*/
-}
-.about-me-text {
-  width: 40%;
-  float: right;
-  margin-right: 100px;
-}
 
 /*Portfolio Section********************************/
 #page2 {
@@ -90,8 +74,6 @@ nav a {
 /*Contact Section********************************/
 
 .contact-section {
-  background-image: url(https://download.unsplash.com/reserve/vof4H8A1S02iWcK6mSAd_sarahmachtsachen.com_TheBeach.jpg);
-  background-size: cover;
   height: 500px;
 }
 
@@ -144,14 +126,6 @@ form {
   text-transform: uppercase;
   color: #333;
 }
-
-
-/*    Projects Pages    */
-
-#wynkedin-screenshot {
-  max-width: 600px;
-}
-
 
 
 
