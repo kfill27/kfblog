@@ -2,12 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'ProximaNova-Light', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #23527c;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'ProximaNova-Bold', sans-serif;
   text-align: center;
 }
 
@@ -19,7 +19,7 @@ h1 {
 /*Header Section********************************/
 
 nav a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'ProximaNova-Light', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;
@@ -92,7 +92,6 @@ form {
 }
 
 .contact-button {
-  font-family: 'Montserrat';
   text-transform: uppercase;
   letter-spacing: 2px;
   background-color: #fde36e;
@@ -122,7 +121,6 @@ form {
 .footer .copyright {
   margin-top: 40px;
   padding: 15px;
-  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   color: #333;
 }
