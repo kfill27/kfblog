@@ -1,7 +1,6 @@
-<p id="notice"><%= notice %></p>
-
+<%= render 'layouts/header' %>
 <h1> The Blog </h1>
-
+  <p id="notice"><%= notice %></p>
   <% @posts.each do |post| %>
       <h2><%= link_to post.title, post %></h2>
       <p><%= post.created_at.strftime("%B %d, %Y") %></p>
