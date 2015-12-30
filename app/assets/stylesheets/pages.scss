@@ -7,7 +7,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #23527c;
+  color: #ee3842;
   font-family: 'ProximaNova-Bold', sans-serif;
   text-align: center;
 }
@@ -88,45 +88,25 @@ nav a {
 
 /*Portfolio Section********************************/
 #page2 {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
-.portfolio h1, .contact-section h1 {
-  margin-bottom: 75px;
+.coming-soon {
+  color: #fff;
+  background: #f4a247;
+  padding: 40px 20px;
 }
-
-.thumbnail {
-  width: 350px;
-  margin: 0 auto;
-}
-
 
 /*Contact Section********************************/
 
-.contact-section {
-  height: 500px;
-}
-
-.contact-section h1 {
-  padding-top: 50px;
-}
-
 form {
   margin-top: 50px;
-  max-width: 60%;
+  max-width: 80%;
   margin: auto;
 }
 
-.form-control {
-  border-radius: none;
-}
-
 .contact-button {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background-color: #fde36e;
-  border-radius: none;
-  color: #fff;
+
 }
 
 /*Footer/ Social Media Section********************************/
