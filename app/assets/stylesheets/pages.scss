@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
   font-family: 'ProximaNova-Light', sans-serif;
+  margin-top: 50px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,16 +12,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-h1 {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .btn-default {
   color: #fff;
   font-family: 'ProximaNova-Bold';
   text-transform: uppercase;
-  padding: 5% 10%;
+  padding: 5% 5%;
   border-radius: 2;
   background: #ee3842;
 }
@@ -44,27 +40,26 @@ nav a {
 /*Jumbotron Section********************************/
 
 .jumbotron {
-  height: 600px;
-  background: url(kfbackground.jpg);
-  background-size: cover;
+  background: url(kfbackground.jpg) no-repeat;
+  background-size: 100%;
   position: static;
   z-index: 1;
 }
 
-.jumbo-text h1 {
-  font-size: 100px;
-  padding-top: 80px;
-  position: relative;
+.jumbo-text {
+  background: #fff;
+  opacity: 0.7;
+  position: static;
+  z-index: 100
 }
 
-.jumbo-text h5 {
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.jumbo-text h1 {
+  font-size: 3em;
+  padding: 30px 0;
 }
 
 .jumbo-text, .jumbo-text h5 {
-  color: #fff;
+  color: #ee3842;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -72,7 +67,6 @@ nav a {
 /*About Me Section********************************/
 #page1 {
   margin-top: 100px;
-  height: 500px;
 }
 
 .about-me-background {
@@ -84,12 +78,17 @@ nav a {
 }
 
 .about-me-text h2 {
-    color: #fff;
+  color: #fff;
+  margin-bottom: 40px
+}
+
+.link-to-blog {
+  margin-bottom: 70px;
 }
 
 /*Portfolio Section********************************/
 #page2 {
-  height: 600px;
+  margin-top: 100px;
 }
 
 .portfolio h1, .contact-section h1 {
