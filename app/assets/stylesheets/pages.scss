@@ -16,6 +16,20 @@ h1 {
   text-transform: uppercase;
 }
 
+.btn-default {
+  color: #fff;
+  font-family: 'ProximaNova-Bold';
+  text-transform: uppercase;
+  padding: 5% 10%;
+  border-radius: 2;
+  background: #ee3842;
+}
+
+.btn-default:hover {
+  /*background: #f4a247;*/
+  background-color: #ee3842;
+}
+
 /*Header Section********************************/
 
 nav a {
@@ -37,12 +51,10 @@ nav a {
   z-index: 1;
 }
 
-.jumbo-text h1{
+.jumbo-text h1 {
   font-size: 100px;
   padding-top: 80px;
   position: relative;
-  z-index: 100;
-  background-color: #333;
 }
 
 .jumbo-text h5 {
@@ -61,6 +73,18 @@ nav a {
 #page1 {
   margin-top: 100px;
   height: 500px;
+}
+
+.about-me-background {
+  background: #9fdae7;
+}
+
+.about-me-text {
+  padding: 60px 20px;
+}
+
+.about-me-text h2 {
+    color: #fff;
 }
 
 /*Portfolio Section********************************/
