@@ -1,3 +1,20 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+a:hover {
+  text-decoration: none;
+}
+
+.fa-plus-circle {
+  color: #ee3842;
+}
+
+.admin-dashboard {
+  display: inline-block;
+}
+
+.post-wrapper {
+  background: #eee;
+  margin: 10px 10px;
+}
