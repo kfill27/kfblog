@@ -1,6 +1,6 @@
 <%= render 'layouts/header' %>
   <div class ="admin-dashboard">
-    <% if current_user.admin? %>
+    <% if current_user.try(:admin?) %>
       <%= link_to new_post_path do %>
         <i class="fa fa-plus-circle fa-3x"></i>
       <% end %>
@@ -12,7 +12,7 @@
       <h2><%= link_to post.title, post %></h2>
       <p class='text-center'><%= post.created_at.strftime("%B %d, %Y") %></p>
       <p><%= post.content %></p>
-      <% if current_user.admin? %>
+      <% if current_user.try(:admin?) %>
       <%= link_to edit_post_path(post) do %>
         <i class="fa fa-pencil-square-o"></i>
       <% end %>
