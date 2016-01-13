@@ -9,7 +9,10 @@
 
 <div class="container" id="page1">
   <div class="row about-me-background col-md-12">
-    <div class="about-me-text col-md-6 col-md-offset-6">
+    <div class="col-md-6 about-me-image">
+      <img src="http://placehold.it/350x350">
+    </div>
+    <div class="about-me-text col-md-6">
       <h2>I also dig art, beaches, books, craft beer, dancing, music, pottery, UI/UX, yoga, and writing...</h5>
       <%= link_to 'Check out my Blog', posts_path, class: "btn btn-default col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 link-to-blog" %>
     </div>
@@ -37,18 +40,4 @@
   </div>
 </div>
 
-<div class="container footer">
-  <div class="row">
-    <div>
-      <ul class= "text-center list-inline social-media">
-        <li><a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-        <li><a href="https://github.com/kfill27" target="_blank"><i class="fa fa-github-square fa-2x"></i></a></li>
-        <li><a href="https://twitter.com/kyrafillmore" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-        <li><a href="https://www.instagram.com/kyrafillmore/" target="_blank"><i class="fa fa-instagram fa-2x"></i></i></a></li>
-        <li><a href="https://open.spotify.com/user/kfillmore27" target="_blank"><i class="fa fa-spotify fa-2x"></i></a></li>
-      </ul>
-      <a href="http://www.kyrafillmore.com" class ="pull-right copyright">Kyra Fillmore &copy;</a>
-
-    </div>
-  </div>
-</div>
+<%= render 'layouts/footer' %>
