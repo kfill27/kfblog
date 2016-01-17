@@ -2,7 +2,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>My Work</h1>
-    <% @projects.each do |project| %>
+    <% @projects.order('projects.created_at DESC').each do |project| %>
       <div class="col-md-3">
         <h1><%= project.name %></h1>
         <%= link_to 'go to live site', project.url %>
