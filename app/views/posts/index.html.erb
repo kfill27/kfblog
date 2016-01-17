@@ -7,7 +7,7 @@
     <% end %>
   </div>
   <p id="notice"><%= notice %></p>
-  <% @posts.each do |post| %>
+  <% @posts.order('posts.created_at DESC').each do |post| %>
     <div class='container post-wrapper'>
       <h2><%= link_to post.title, post %></h2>
       <p class='text-center'><%= post.created_at.strftime("%B %d, %Y") %></p>
