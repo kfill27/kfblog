@@ -11,7 +11,7 @@
     <div class='container post-wrapper'>
       <h2><%= link_to post.title, post %></h2>
       <p class='text-center'><%= post.created_at.strftime("%B %d, %Y") %></p>
-      <p><%= post.content %></p>
+      <p><%= markdown post.content %></p>
       <% if current_user.try(:admin?) %>
         <%= link_to edit_post_path(post) do %>
           <i class="fa fa-pencil-square-o"></i>
