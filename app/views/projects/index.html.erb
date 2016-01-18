@@ -1,20 +1,24 @@
 <%= render 'layouts/header' %>
 <p id="notice"><%= notice %></p>
-
-<h1>My Work</h1>
-    <% @projects.order('projects.created_at DESC').each do |project| %>
-      <div class="col-md-3">
-        <h1><%= project.name %></h1>
-        <%= link_to 'go to live site', project.url %>
-        <p><%= project.description %></p>
-        <%= link_to 'Show', project %>
-      <% if current_user.try(:admin?) %>
-        <%= link_to 'Edit', edit_project_path(project) %>
-        <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <div class="row">
+      <% @projects.order('projects.created_at DESC').each do |project| %>
+        <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="http://placehold.it/350x250">
+          <div class="caption">
+            <h3><%= project.name %></h3>
+            <p><%= project.description %></p>
+            <%= link_to 'go to live site', project.url %>
+            <%= link_to 'Show', project %>
+              <% if current_user.try(:admin?) %>
+                <%= link_to 'Edit', edit_project_path(project) %>
+                <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %>
+              <% end %>
+          </div>
+        </div>
+        </div>
       <% end %>
-      </div>
-    <% end %>
-
+    </div>
 <% if current_user.try(:admin?) %>
     <%= link_to 'New Project', new_project_path %>
 <% end %>
