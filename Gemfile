@@ -1,6 +1,7 @@
 ruby '2.2.2'
 source 'https://rubygems.org'
 
+# gem 'coderay'
 gem 'devise'
 gem 'pg'
 gem 'rails', '4.2.1'
