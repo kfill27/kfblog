@@ -14,3 +14,12 @@
  *= require_self
  */
 
+ @font-face {
+     font-family: "ProximaNova-Bold";
+     src: url(/assets/ProximaNova-Bold.ttf) format("truetype");
+ }
+
+ @font-face{
+     font-family: "ProximaNova-Light";
+     src: url(/assets/ProximaNova-Light.ttf) format("truetype");
+   }
