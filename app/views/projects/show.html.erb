@@ -5,6 +5,8 @@
   <%= @project.name %>
 </p>
 
+<%= image_tag attachment_url(@project, :project_image, :fill, 350, 350, format: "jpg") %>
+
 <p>
   <strong>Url:</strong>
   <%= @project.url %>
