@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+<%= image_tag attachment_url(@project, :project_image, :fill, 350, 350, format: "jpg") %>
+
 <p>
   <strong>Name:</strong>
   <%= @project.name %>
 </p>
-
-<%= image_tag attachment_url(@project, :project_image, :fill, 350, 350, format: "jpg") %>
 
 <p>
   <strong>Url:</strong>

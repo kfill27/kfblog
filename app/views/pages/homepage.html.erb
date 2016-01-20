@@ -20,10 +20,8 @@
 <a id="portfolio"></a>
 </div>
 
-<div class="container col-md-12" id="page2">
-  <hr>
-
-  <div class="row">
+<div class="recent-work container col-md-12" id="page2">
+  <div class="row col-md-12">
     <% @projects.each do |project| %>
       <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
@@ -38,12 +36,9 @@
       </div>
     <% end %>
   </div>
-
-      <div class="col-md-12">
-        <%= link_to 'See All', projects_path, class: "btn" %>
-      </div>
-
-  <hr class="col-md-12">
+  <div>
+    <%= link_to 'See All', projects_path, class: "btn see-all-projects" %>
+  </div>
 <a id="contact"></a>
 </div>
 
