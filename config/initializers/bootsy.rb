@@ -66,4 +66,5 @@ Bootsy.setup do |config|
   # Specify the controller to inherit from. Using ApplicationController
   # allows you to perform authentication from within your app.
   # config.base_controller = ActionController::Base
+  Rails.application.config.assets.precompile += %w( bootsy/gallery-loader.gif )
 end
