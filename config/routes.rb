@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  mount Bootsy::Engine => '/bootsy', as: 'bootsy'
+
   resources :projects
   resources :comments
   resources :posts
