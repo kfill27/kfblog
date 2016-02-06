@@ -8,17 +8,21 @@ a:hover {
   text-decoration: none;
 }
 
+.post-wrapper {
+  background: #fff;
+}
+
+.post-title {
+  color: $red;
+  font-family: 'ProximaNova-Bold', sans-serif;
+}
+
 .fa-plus-circle {
   color: $red;
 }
 
 .admin-dashboard {
   display: inline-block;
-}
-
-.post-wrapper {
-  background: #eee;
-  margin: 10px 10px;
 }
 
 .show-title {

@@ -4,15 +4,15 @@
 <div class="row">
   <!-- SideBar -->
 
-  <div class="col m3 hide-on-med-and-down">
+  <!-- <div class="col m3 hide-on-med-and-down">
     <ul>
       <li>link</li>
       <li>link</li>
       <li>link</li>
     </ul>
-  </div>
+  </div> -->
 
-  <div class="col s12 m9">
+  <div class="col m8 offset-m2 s12">
     <div class ="admin-dashboard">
       <% if current_user.try(:admin?) %>
         <%= link_to new_post_path do %>
@@ -23,8 +23,8 @@
     <p id="notice"><%= notice %></p>
     <% @posts.order('posts.created_at DESC').each do |post| %>
       <div class='container post-wrapper'>
-        <h2><%= link_to post.title, post %></h2>
-        <p class='text-center'><%= post.created_at.strftime("%B %d, %Y") %></p>
+        <h2 class="center"><%= link_to post.title, post, class: 'post-title' %></h2>
+        <p class="center"><%= post.created_at.strftime("%B %d, %Y") %></p>
         <p><%= markdown post.content %></p>
         <% if current_user.try(:admin?) %>
           <%= link_to edit_post_path(post) do %>
