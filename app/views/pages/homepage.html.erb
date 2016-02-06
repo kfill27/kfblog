@@ -15,9 +15,10 @@
   </div>
 </div>
 
-<div class="recent-work container">
+<div class="recent-work">
   <% @projects.each do |project| %>
-    <div class="card">
+  <div class="row">
+    <div class="card col s12 m4">
       <div class="card-image waves-effect waves-block waves-light">
         <%= image_tag attachment_url(@project, :project_image, :fill, 350, 350, format: "jpg"), class: 'activator' %>
       </div>
@@ -30,6 +31,7 @@
       </div>
     </div>
     <% end %>
+  </div>
 </div>
 
 
