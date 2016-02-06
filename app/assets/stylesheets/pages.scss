@@ -4,6 +4,11 @@
 
 @import 'variables';
 
+img {
+  max-width: 100%;
+}
+
+
 body {
   font-family: 'ProximaNova-Light', sans-serif;
 }
@@ -23,6 +28,19 @@ nav a {
   letter-spacing: 2px;
   color: #333;
   margin: 0 30px;
+}
+
+nav {
+  background-color: $red;
+}
+
+.brand-logo {
+  font-size: 1rem;
+  color:#fff;
+}
+
+.material-icons {
+  color: #fff;
 }
 
 /*Jumbotron Section********************************/
@@ -51,18 +69,13 @@ nav a {
 }
 
 /*About Me Section********************************/
-#page1 {
-  margin-top: 100px;
-}
 
 .about-me-background {
   background: $blue;
 }
 
-
-.about-me-text h2 {
+.about-me-text {
   color: #fff;
-  margin-bottom: 40px
 }
 
 .link-to-blog {
@@ -70,14 +83,15 @@ nav a {
 }
 
 /*Portfolio Section********************************/
-#page2 {
-  margin: 100px 0;
-}
 
 .recent-work {
   color: #fff;
   background: $orange;
   padding: 40px 20px;
+}
+
+.card {
+  margin: 20px 20px;
 }
 
 .see-all-projects {
