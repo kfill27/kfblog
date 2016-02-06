@@ -1,4 +1,3 @@
-<%= render 'layouts/header' %>
 <p id="notice"><%= notice %></p>
     <div class="row">
       <% @projects.order('projects.created_at DESC').each do |project| %>

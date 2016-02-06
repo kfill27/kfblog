@@ -1,25 +1,40 @@
-<%= render 'layouts/blog_header' %>
-  <div class ="admin-dashboard">
-    <% if current_user.try(:admin?) %>
-      <%= link_to new_post_path do %>
-        <i class="fa fa-plus-circle fa-3x"></i>
-      <% end %>
-    <% end %>
+<div class="jumbotron">
+  <h1>Over-Thinking. Over-Sharing.<br>Likely Underwhelming...</h1>
+</div>
+<div class="row">
+  <!-- SideBar -->
+
+  <div class="col s3">
+    <ul>
+      <li>link</li>
+      <li>link</li>
+      <li>link</li>
+    </ul>
   </div>
-  <p id="notice"><%= notice %></p>
-  <% @posts.order('posts.created_at DESC').each do |post| %>
-    <div class='container post-wrapper'>
-      <h2><%= link_to post.title, post %></h2>
-      <p class='text-center'><%= post.created_at.strftime("%B %d, %Y") %></p>
-      <p><%= markdown post.content %></p>
+
+  <div class="col s9">
+    <div class ="admin-dashboard">
       <% if current_user.try(:admin?) %>
-        <%= link_to edit_post_path(post) do %>
-          <i class="fa fa-pencil-square-o"></i>
-        <% end %>
-        <%= link_to post, method: :delete, data: { confirm: 'Are you sure?' } do %>
-          <i class="fa fa-trash-o"></i>
+        <%= link_to new_post_path do %>
+          <i class="fa fa-plus-circle fa-3x"></i>
         <% end %>
       <% end %>
     </div>
-  <% end %>
-<%= render 'layouts/footer' %>
+    <p id="notice"><%= notice %></p>
+    <% @posts.order('posts.created_at DESC').each do |post| %>
+      <div class='container post-wrapper'>
+        <h2><%= link_to post.title, post %></h2>
+        <p class='text-center'><%= post.created_at.strftime("%B %d, %Y") %></p>
+        <p><%= markdown post.content %></p>
+        <% if current_user.try(:admin?) %>
+          <%= link_to edit_post_path(post) do %>
+            <i class="fa fa-pencil-square-o"></i>
+          <% end %>
+          <%= link_to post, method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <i class="fa fa-trash-o"></i>
+          <% end %>
+        <% end %>
+      </div>
+    <% end %>
+    </div>
+</div>

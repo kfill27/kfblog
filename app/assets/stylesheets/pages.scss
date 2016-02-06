@@ -1,29 +1,17 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'variables';
+
 body {
   font-family: 'ProximaNova-Light', sans-serif;
-  margin-top: 50px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #ee3842;
+h1 {
+  color: $red;
   font-family: 'ProximaNova-Bold', sans-serif;
   text-align: center;
-}
-
-// .btn-default {
-//   color: #fff;
-//   font-family: 'ProximaNova-Bold';
-//   text-transform: uppercase;
-//   padding: 5% 5%;
-//   border-radius: 2;
-//   background: #ee3842;
-// }
-
-.btn-default:hover {
-  /*background: #f4a247;*/
-  background-color: #ee3842;
 }
 
 /*Header Section********************************/
@@ -57,7 +45,7 @@ nav a {
 }
 
 .jumbo-text, .jumbo-text h5 {
-  color: #ee3842;
+  color: $red;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -68,16 +56,9 @@ nav a {
 }
 
 .about-me-background {
-  background: #9fdae7;
+  background: $blue;
 }
 
-.about-me-image {
-  padding: 60px 20px;
-}
-
-.about-me-text {
-  padding: 60px 20px;
-}
 
 .about-me-text h2 {
   color: #fff;
@@ -95,7 +76,7 @@ nav a {
 
 .recent-work {
   color: #fff;
-  background: #f4a247;
+  background: $orange;
   padding: 40px 20px;
 }
 
@@ -126,7 +107,7 @@ form {
 }
 
 .social-media li a {
-  color: #fde36e;
+  color: $red;
 }
 
 .footer .copyright {

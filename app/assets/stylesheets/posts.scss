@@ -2,12 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import 'variables';
+
 a:hover {
   text-decoration: none;
 }
 
 .fa-plus-circle {
-  color: #ee3842;
+  color: $red;
 }
 
 .admin-dashboard {
