@@ -11,7 +11,7 @@
   </div> -->
   <div class="about-me-text col s12 m6 offset-m6">
     <h3>I also dig art, beaches, books, craft beer, music, pottery, UI/UX, yoga, and writing...</h3>
-    <%= link_to 'Check out my Blog', posts_path, class: "btn btn-default link-to-blog" %>
+    <%= link_to 'Check out my Blog', posts_path, class: "btn btn-large btn-default link-to-blog" %>
   </div>
 </div>
 
@@ -26,8 +26,10 @@
         <span class="card-title activator grey-text text-darken-4"><%= project.name %><i class="material-icons right">more_vert</i></span>
       </div>
       <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-        <p><%= project.description %></p>
+        <span class="card-title grey-text text-darken-4"><%= project.description %><i class="material-icons right">close</i></span>
+      </div>
+      <div class="">
+        <%= link_to 'Check it out', project.url, class: 'waves-effect waves-light btn' %>
       </div>
     </div>
     <% end %>
