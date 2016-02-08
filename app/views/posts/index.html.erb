@@ -26,6 +26,7 @@
         <h2 class="center"><%= link_to post.title, post, class: 'post-title' %></h2>
         <p class="center"><%= post.created_at.strftime("%B %d, %Y") %></p>
         <p><%= markdown post.content %></p>
+        <hr>
         <% if current_user.try(:admin?) %>
           <%= link_to edit_post_path(post) do %>
             <i class="fa fa-pencil-square-o"></i>
