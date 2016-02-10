@@ -10,9 +10,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'redcarpet'
-gem "refile", require: 'refile/rails'
-gem "refile-mini_magick"
-gem "refile-s3"
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
