@@ -1,21 +1,14 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  <div class="col-md-6 col-md-offset-3">
+    <%= @project.name %>
+    <%= image_tag attachment_url(@project, :project_image, :fill, 350, 350, format: "jpg") %>
+    <%= @project.url %>
+    <%= @project.description %>
+  </div>
 
-<%= image_tag attachment_url(@project, :project_image, :fill, 350, 350, format: "jpg") %>
-
-<p>
-  <strong>Name:</strong>
-  <%= @project.name %>
-</p>
-
-<p>
-  <strong>Url:</strong>
-  <%= @project.url %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+  <div class="buttons">
+    <%= link_to 'Edit', edit_project_path(@project) %> |
+    <%= link_to 'Back', projects_path %>
+  </div>
+</div>
