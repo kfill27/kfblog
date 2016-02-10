@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 
 gem 'devise'
+gem 'paperclip'
+gem 'aws-sdk'
 gem 'pg'
 gem 'rails', '4.2.1'
 gem 'sass-rails', '~> 5.0'
