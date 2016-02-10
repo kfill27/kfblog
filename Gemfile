@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 
 gem 'devise'
-gem "paperclip"
+gem "paperclip", "~> 4.3"
 gem 'aws-sdk', '< 2.0'
 gem 'pg'
 gem 'rails', '4.2.1'
@@ -26,5 +26,5 @@ group :development do
 end
 
 group :production do
-gem 'rails_12factor'
+  gem 'rails_12factor'
 end
