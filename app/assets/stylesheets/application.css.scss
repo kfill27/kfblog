@@ -26,3 +26,34 @@
   font-family: "ProximaNova-Light";
   src: font-url('ProximaNova-Light.ttf');
 }
+
+
+.btn {
+  background: $dark-blue;
+}
+
+.btn:hover {
+  background: $dark-blue;
+}
+
+// HomePage Colors
+.dark-blue {
+  background: $dark-blue;
+  height:50px;
+}
+.medium-blue {
+  background: $medium-blue;
+  height:50px;
+}
+.light-blue {
+  background: $light-blue;
+  height:50px;
+}
+.red {
+  background: $red;
+  height:50px;
+}
+.orange {
+  background: $orange;
+  height:50px;
+}
