@@ -17,8 +17,9 @@
   </div>
 </div>
 
-<div class="recent-work">
+<div class="container recent-work">
   <div class="row">
+  <!-- <div class="row">
       <% @projects.each do |project| %>
       <div class="card col m3 s12">
         <div class="card-image waves-effect waves-block waves-light">
@@ -35,9 +36,50 @@
         </div>
       </div>
       <% end %>
+  </div> -->
+    <div class="card col s12 m4">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://images.unsplash.com/photo-1448518184296-a22facb4446f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1bd19ac4e5aa3f90ce7dbd3820ec8930">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+        <p><%= link_to 'See more...', projects_path %></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      </div>
+    </div>
+
+    <div class="card col s12 m4">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://images.unsplash.com/photo-1448518184296-a22facb4446f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1bd19ac4e5aa3f90ce7dbd3820ec8930">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+        <p><%= link_to 'See more...', projects_path %></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      </div>
+    </div>
+
+    <div class="card col s12 m4">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://images.unsplash.com/photo-1448518184296-a22facb4446f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1bd19ac4e5aa3f90ce7dbd3820ec8930">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+        <p><%= link_to 'See more...', projects_path %></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      </div>
+    </div>
   </div>
 </div>
-
 <div class="link-to-projects center">
   <%= link_to 'See All', projects_path, class: "btn see-all-projects" %>
 </div>
