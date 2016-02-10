@@ -1,7 +1,7 @@
 <div class="container">
   <p id="notice"><%= notice %></p>
   <div class="col-md-6 col-md-offset-3">
-    <%= image_tag @project.project_image.url(:medium) %>
+    <%= image_tag @user.avatar.url %>
     <%= @project.name %>
     <%= @project.url %>
     <%= @project.description %>

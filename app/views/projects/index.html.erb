@@ -3,7 +3,6 @@
       <% @projects.order('projects.created_at DESC').each do |project| %>
         <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-          <%= image_tag attachment_url(@project, :project_image, :fill, 350, 350, format: "jpg") %>
           <div class="caption">
             <h3><%= project.name %></h3>
             <p><%= project.description %></p>
