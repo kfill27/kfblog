@@ -1,33 +1,35 @@
-<%= form_for(@project, multipart: true) do |f| %>
-  <% if @project.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+<div class="container">
+  <%= form_for(@project, multipart: true) do |f| %>
+    <% if @project.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
 
-      <ul>
-      <% @project.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+        <ul>
+        <% @project.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+    <div class="field">
+      <%= f.label "Url: http://www..." %><br>
+      <%= f.text_field :url, class: 'form-control' %>
+    </div>
+    <div class="field">
+      <%= f.label :description %><br>
+      <%= f.text_area :description, class: 'form-control' %>
+    </div>
+    <div class="field">
+      <%= f.label :project_image %>
+      <%= f.file_field :project_image %>
+    </div>
+    <div class="actions">
+      <%= f.submit 'Submit', class: 'btn' %>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name, class: 'form-control' %>
-  </div>
-  <div class="field">
-    <%= f.label "Url: http://www..." %><br>
-    <%= f.text_field :url, class: 'form-control' %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description, class: 'form-control' %>
-  </div>
-  <div class="field">
-    <%= f.label :project_image %>
-    <%= f.file_field :project_image %>
-  </div>
-  <div class="actions">
-    <%= f.submit 'Submit', class: 'btn' %>
-  </div>
-<% end %>
+</div>
