@@ -18,3 +18,14 @@
 $( document ).ready(function(){
 $(".button-collapse").sideNav();
 });
+
+$(function () {
+  count = 0;
+  wordsArray = ["bright colors", "art", "beaches", "books", "craft beer", "design", "music", "pottery", "UI/UX", "yoga", "writing" ];
+  setInterval(function () {
+    count++;
+    $("#word").fadeOut(400, function () {
+      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
+    });
+  }, 2000);
+});
