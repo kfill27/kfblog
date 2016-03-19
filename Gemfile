@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 
 gem 'devise'
+gem 'instagram'
 gem "paperclip", "~> 4.3"
 gem 'aws-sdk', '< 2.0'
 gem 'pg'
