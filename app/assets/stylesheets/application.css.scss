@@ -43,6 +43,11 @@
   background: $dark-blue;
 }
 
+// CSS to make content fade in on scroll
+.fadeInBlock {
+    opacity:0;
+}
+
 // HomePage Colors
 .dark-blue {
   background: $dark-blue;
