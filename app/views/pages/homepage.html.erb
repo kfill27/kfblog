@@ -22,7 +22,7 @@
   <h1>Check out some of my recent projects</h1>
   <div class="row">
     <% @projects.each do |project| %>
-    <div class="card small col m4 s12">
+    <div class="card small col s12 m4">
       <div class="card-image waves-effect waves-block waves-light">
         <%= image_tag(project.project_image.url, class: "activator") %>
       </div>

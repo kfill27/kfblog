@@ -3,29 +3,16 @@
       <%= link_to "Kyra Fillmore", root_path, class: 'brand-logo' %>
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><%= link_to 'Blog', posts_path %></li>
       <li><%= link_to 'About', about_path %></li>
+      <li><%= link_to 'Blog', posts_path %></li>
       <li><%= link_to 'Portfolio', projects_path %></li>
-      <!-- <li><a href = "#contact" >Contact</a></li>
-      <li>
-        <% if user_signed_in? %>
-          <li>
-          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-          </li>
-        <% else %>
-          <li>
-          <%= link_to('Login', new_user_session_path)  %>
-          </li>
-        <% end %>
-      </li> -->
     </ul>
 
     <ul class="side-nav" id="mobile-demo">
       <li><%= link_to 'Home', root_path %></li>
-      <li><%= link_to 'Blog', posts_path %></li>
       <li><%= link_to 'About', about_path %></li>
+      <li><%= link_to 'Blog', posts_path %></li>
       <li><%= link_to 'Portfolio', projects_path %></li>
-      <!-- <li><a href = "#contact" >Contact</a></li>
       <li>
         <% if user_signed_in? %>
           <li>
@@ -36,7 +23,7 @@
           <%= link_to('Login', new_user_session_path)  %>
           </li>
         <% end %>
-      </li> -->
+      </li>
     </ul>
   </div>
 </nav>
