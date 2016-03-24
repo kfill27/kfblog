@@ -5,6 +5,6 @@ def homepage
 end
 
 def about
-  @instagram = Instagram.user_recent_media("225701853", {:count => 12})
+  @instagram = Instagram.user_recent_media("225701853", {:count => 8})
 end
 end
