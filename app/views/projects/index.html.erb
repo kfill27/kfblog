@@ -2,18 +2,15 @@
     <div class="row">
       <% @projects.order('projects.created_at DESC').each do |project| %>
         <div class="col s6">
-        <div class="thumbnail">
-          <div class="caption">
-            <h3><%= project.name %></h3>
-            <p><%= project.description %></p>
-            <%# link_to 'go to live site', project.url %>
-            <%= link_to 'Show', project %>
-              <% if current_user.try(:admin?) %>
-                <%= link_to 'Edit', edit_project_path(project) %>
-                <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %>
-              <% end %>
-          </div>
-        </div>
+          <%= image_tag project.project_image.url %>
+          <h3><%= project.name %></h3>
+          <p><%= project.description %></p>
+          <%# link_to 'go to live site', project.url %>
+          <%= link_to 'Show', project %>
+            <% if current_user.try(:admin?) %>
+              <%= link_to 'Edit', edit_project_path(project) %>
+              <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <% end %>
         </div>
       <% end %>
     </div>
