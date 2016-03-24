@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
     <div class="row">
       <% @projects.order('projects.created_at DESC').each do |project| %>
-        <div class="col-sm-6 col-md-4">
+        <div class="col s6">
         <div class="thumbnail">
           <div class="caption">
             <h3><%= project.name %></h3>
