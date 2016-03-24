@@ -2,10 +2,20 @@
 <p id="notice"><%= notice %></p>
 <div class="row center-align">
   <% @projects.order('projects.created_at DESC').each do |project| %>
-    <div class="individual-project col s6">
-      <%= image_tag project.project_image.url %>
-      <h3><%= project.name %></h3>
-      <%= link_to 'View More', project, class: "waves-effect waves-light btn" %>
+    <div class="card">
+      <div class="card-image">
+        <%= image_tag project.project_image.url, class: "project-index-image" %>
+        <span class="card-title"><h3><%= project.name %></h3></span>
+      </div>
+      <div class="card-content">
+        <p>I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively.</p>
+      </div>
+      <div class="card-action">
+        <%= link_to 'View More', project, class: "waves-effect waves-light btn" %>
+      </div>
+    </div>
+    <div class="individual-project col s6 m4">
     </div>
   <% end %>
 </div>
