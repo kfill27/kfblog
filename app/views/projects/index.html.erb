@@ -1,13 +1,15 @@
+<div class="projects-index">
 <p id="notice"><%= notice %></p>
-    <div class="row center-align">
-      <% @projects.order('projects.created_at DESC').each do |project| %>
-        <div class="individual-project col s6">
-          <%= image_tag project.project_image.url %>
-          <h3><%= project.name %></h3>
-          <%= link_to 'View More', project, class: "waves-effect waves-light btn" %>
-        </div>
-      <% end %>
+<div class="row center-align">
+  <% @projects.order('projects.created_at DESC').each do |project| %>
+    <div class="individual-project col s6">
+      <%= image_tag project.project_image.url %>
+      <h3><%= project.name %></h3>
+      <%= link_to 'View More', project, class: "waves-effect waves-light btn" %>
     </div>
+  <% end %>
+</div>
 <% if current_user.try(:admin?) %>
     <%= link_to 'New Project', new_project_path %>
 <% end %>
+</div>
