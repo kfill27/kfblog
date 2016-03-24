@@ -18,8 +18,16 @@ h1 {
   text-align: center;
 }
 
-.about-row {
+.about-row .col {
   padding:0;
+}
+
+.about-row.row {
+  margin-bottom: 0;
+}
+
+.about-content p {
+    padding: 0 0.75em;
 }
 
 /*Header Section********************************/
