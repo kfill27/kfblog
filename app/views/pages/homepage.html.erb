@@ -1,24 +1,21 @@
-<div class = "jumbotron">
+<div class="jumbotron">
   <div class="container jumbo-text">
     <h1>Code is my<br>jam...</h1>
   </div>
-<a id="about"></a>
 </div>
 
-<div class="row about-me-background">
-  <div class="red"></div>
-  <div class="orange"></div>
-  <div class="light-blue"></div>
-  <div class="medium-blue"></div>
-  <div class="dark-blue"></div>
+<div class="center">
+  <h6>I also love writing.</h6>
+  <%= link_to 'Check out my Blog', posts_path, class: "btn btn-large btn-default link-to-blog" %>
+</div>
 
-  <div class="about-me-text col s8 offset-s2 center fadeInBlock">
+<!-- <div class="row about-me-background">
+  <div class="col s8 offset-s2 center fadeInBlock">
     <h3>I also love... <span id="word">reading</span>!</h3>
-    <%= link_to 'Check out my Blog', posts_path, class: "btn btn-large btn-default link-to-blog" %>
   </div>
-</div>
+</div> -->
 
-<div class="container recent-work fadeInBlock">
+<!-- <div class="container recent-work fadeInBlock">
   <h1>Check out some of my recent projects</h1>
   <div class="row">
     <% @projects.each do |project| %>
@@ -42,4 +39,4 @@
 </div>
 <div class="link-to-projects center">
   <%= link_to 'See All', projects_path, class: "btn see-all-projects" %>
-</div>
+</div> -->

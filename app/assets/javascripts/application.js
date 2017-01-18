@@ -16,20 +16,20 @@
 
 
 $( document ).ready(function(){
-$(".button-collapse").sideNav();
+  $(".button-collapse").sideNav();
 });
 
 // Home Page About Me Functionality
-$(function () {
-  count = 0;
-  wordsArray = ["bright colors", "art", "beaches", "books", "craft beer", "design", "music", "pottery", "UI/UX", "yoga", "writing" ];
-  setInterval(function () {
-    count++;
-    $("#word").fadeOut(400, function () {
-      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
-    });
-  }, 2000);
-});
+// $(function () {
+//   count = 0;
+//   wordsArray = ["art", "beaches", "books", "craft beer", "design", "music", "pottery", "UI/UX", "yoga", "writing" ];
+//   setInterval(function () {
+//     count++;
+//     $("#word").fadeOut(400, function () {
+//       $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
+//     });
+//   }, 2000);
+// });
 
 // Makes content with class of 'fadeInBlock' fade in on scroll.
 $(function() {

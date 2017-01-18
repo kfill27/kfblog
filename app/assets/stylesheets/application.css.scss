@@ -16,7 +16,6 @@
 
 @import 'variables';
 
-
  @font-face {
   font-family: "ProximaNova-Bold";
   src: font-url('ProximaNova-Bold.ttf')
@@ -31,64 +30,11 @@
   width: 90%;
 }
 
-// .row .col.m4 {
-//   width: 32%;
-// }
-
 .btn {
-  background: $dark-blue;
-}
-
-.btn:hover {
-  background: $dark-blue;
+  background: #333;
 }
 
 // CSS to make content fade in on scroll
 .fadeInBlock {
-    opacity:0;
-}
-
-// HomePage Colors
-.dark-blue {
-  background: $dark-blue;
-  height:50px;
-}
-.medium-blue {
-  background: $medium-blue;
-  height:50px;
-}
-.light-blue {
-  background: $light-blue;
-  height:50px;
-}
-.red {
-  background: $red;
-  height:50px;
-}
-.orange {
-  background: $orange;
-  height:50px;
-}
-
-// About Page Colors
-.about-dark-blue {
-  background: $dark-blue;
-  height:20px;
-}
-.about-medium-blue {
-  background: $medium-blue;
-  height:20px;
-}
-.about-light-blue {
-  background: $light-blue;
-  height:20px;
-}
-.about-red {
-  background: $red;
-  height:20px;
-  margin-top: -6px;
-}
-.about-orange {
-  background: $orange;
-  height:20px;
+  opacity:0;
 }
